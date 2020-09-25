@@ -145,7 +145,7 @@ public class Eight_puzzle
                     gameBoard.printState();
                 } else  // end of randomizeState 
                 if (c == 'm') { //this indicates maxNodes <n> with n at index 10
-                    int n = Integer.parseInt(command.substring(10,length));
+                    int n = Integer.parseInt(command.substring(10,length-1));
                     gameBoard.setMaxNodes(n);
                 } else  //end of maxNodes
                 if (c == 'A' || c == 'a') { //this indicates A* <1> or A* <2> with heurstic # at index 4
@@ -157,7 +157,7 @@ public class Eight_puzzle
                 if (c == 'b') { //this indicates beam <k> with k at index 6
                     System.out.println("The current board state");
                     gameBoard.printState();
-                    int k = Integer.parseInt(command.substring(6,length));
+                    int k = Integer.parseInt(command.substring(6,length-1));
                     gameBoard.beam(k);
                 } //end of beam solver 
             } // end of while loop
