@@ -1,0 +1,20 @@
+setState <b12 345 678>
+printState
+randomizeState <13>
+disp <up> 
+disp <left>
+printState
+disp <right>
+disp <down>
+printState
+A* <1>
+randomizeState <18>
+A* <2>
+randomizeState <6>
+beam <4>
+printState
+setState <b12 345 678>
+randomizeState <6>
+maxNodes <9>
+A* <2>
+
